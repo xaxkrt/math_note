@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>笔记_平面直角坐标系</title>
+</head>
+
+<body>
+    <h1>1_平面直角坐标系的基本概念</h1>
+    <ol>
+        <li>平面直角坐标系: 两条互相垂直的<u>数轴</u></li>
+        <p>三要素: 原点(0), 正方向(右&上), 单位长度("1")</p>
+
+        <li>一点 两轴 四象限</li>
+        <ol>
+            <li>一点: 两条数轴的交点: 公共原点 O</li>
+            <li>两轴: 坐标轴</li>
+            <ul>
+                <li>横轴/x轴</li>
+                <li>纵轴/y轴</li>
+            </ul>
+            <li>四象限: 四个区域(第一象限&第二象限&第三象限&第四象限)</li>
+        </ol>
+
+        <li>点的坐标: P(a, b) (a: 横坐标, b: 纵坐标)</li>
+    </ol>
+
+    <h1>2_点的特征之横纵坐标正负性</h1>
+    <h2>点与四大象限</h2>
+    <ol>
+        <li>点 A(x, y) 在第一象限, 则</li>
+        <ul>
+            <li>x &gt; 0</li>
+            <li>y &gt; 0</li>
+        </ul>
+
+        <li>点 B(x, y) 在第二象限, 则</li>
+        <ul>
+            <li>x &lt; 0</li>
+            <li>y &gt; 0</li>
+        </ul>
+
+        <li>点 C(x, y) 在第三象限, 则</li>
+        <ul>
+            <li>x &lt; 0</li>
+            <li>y &lt; 0</li>
+        </ul>
+
+        <li>点 D(x, y) 在第一象限, 则</li>
+        <ul>
+            <li>x &gt; 0</li>
+            <li>y &lt; 0</li>
+        </ul>
+
+        <li>点 E(x, y) 在x轴上, 则 y = 0</li>
+        <li>点 F(x, y) 在x轴上方, 则 y &gt; 0</li>
+        <li>点 G(x, y) 在x轴下方, 则 y &lt; 0</li>
+        <li>点 H(x, y) 在y轴上, 则 x = 0</li>
+        <li>点 I(x, y) 在y轴右方, 则 x &gt; 0</li>
+        <li>点 J(x, y) 在y轴左方, 则 x &lt; 0</li>
+        <li>点 K(x, y) 在坐标轴上, 则 x = 0 或 y = 0</li>
+    </ol>
+
+    <h1>3_点的特征之横纵坐标大小关系</h1>
+    <h2>点与象限的角平分线</h2>
+    <ol>
+        <li>点 A(x, y) 在第一/三象限的</li>
+        <ul>
+            <li>角平分线上, 则 x = y</li>
+            <li>角平分线上方, 则 x &lt; y</li>
+            <li>角平分线下方, 则 x &gt; y</li>
+        </ul>
+
+        <li>点 A(x, y) 在第二/四象限的</li>
+        <ul>
+            <li>角平分线上, 则 x + y = 0</li>
+            <li>角平分线上方, 则 x + y &gt; 0</li>
+            <li>角平分线下方, 则 x + y &lt; 0</li>
+        </ul>
+    </ol>
+
+    <h2>两点与坐标轴</h2>
+    <ol>
+        <li>若 A(x<sub>a</sub>, y<sub>a</sub>), B(x<sub>b</sub>, y<sub>b</sub>) 满足</li>
+        <ul>
+            <li>AB // x轴, 则</li>
+            <ul>
+                <li>x<sub>a</sub> ≠ x<sub>b</sub></li>
+                <li>y<sub>a</sub> = y<sub>b</sub></li>
+            </ul>
+
+            <li>AB // y轴, 则</li>
+            <ul>
+                <li>x<sub>a</sub> = x<sub>b</sub></li>
+                <li>y<sub>a</sub> ≠ y<sub>b</sub></li>
+            </ul>
+        </ul>
+    </ol>
+
+    <h1>4_线的特性之平行&距离&中点</h1>
+    <h2>平行于坐标轴的线</h2>
+    <ol>
+        <li>过点 A(a, b) 且平行于</li>
+        <ul>
+            <li>x轴的直线为 y = b</li>
+            <li>y轴的直线为 x = a</li>
+        </ul>
+    </ol>
+
+    <h2>线段长度</h2>
+    <ol>
+        <li>两点间的距离公式: A(x<sub>1</sub>, y<sub>1</sub>), B(x<sub>2</sub>, y<sub>2</sub>), C(x<sub>1</sub>, y<sub>2</sub>)
+        </li>
+        <ul>
+            <li>A, C 两点横坐标相同: AC = |y<sub>1</sub> - y<sub>2</sub>|</li>
+            <li>B, C 两点纵坐标相同: BC = |x<sub>1</sub> - x<sub>2</sub>|</li>
+
+            <li>A, B 两点距离公式: AB = <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <msqrt>
+                        <mrow>
+                            <msup>
+                                <mrow>
+                                    <mo>(</mo>
+                                    <mtext>x</mtext>
+                                    <msub>
+                                        <mrow></mrow>
+                                        <mn>1</mn>
+                                    </msub>
+                                    <mo>&#x2212;</mo> <!-- 使用Unicode实体表示减号 -->
+                                    <mtext>x</mtext>
+                                    <msub>
+                                        <mrow></mrow>
+                                        <mn>2</mn>
+                                    </msub>
+                                    <mo>)</mo>
+                                </mrow>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <msup>
+                                <mrow>
+                                    <mo>(</mo>
+                                    <mtext>y</mtext>
+                                    <msub>
+                                        <mrow></mrow>
+                                        <mn>1</mn>
+                                    </msub>
+                                    <mo>&#x2212;</mo>
+                                    <mtext>y</mtext>
+                                    <msub>
+                                        <mrow></mrow>
+                                        <mn>2</mn>
+                                    </msub>
+                                    <mo>)</mo>
+                                </mrow>
+                                <mn>2</mn>
+                            </msup>
+                        </mrow>
+                    </msqrt>
+                </math>
+            </li>
+        </ul>
+    </ol>
+
+    <h2>线段中点表示</h2>
+    <ol>
+        <li>若 A(x<sub>1</sub>, y<sub>1</sub>), B(x<sub>2</sub>, y<sub>2</sub>), 则 AB 中点 M(<math
+                xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                <mfrac>
+                    <mrow>
+                        <mtext>x</mtext>
+                        <msub>
+                            <mrow></mrow>
+                            <mn>1</mn>
+                        </msub>
+                        <mo>+</mo>
+                        <mtext>x</mtext>
+                        <msub>
+                            <mrow></mrow>
+                            <mn>2</mn>
+                        </msub>
+                    </mrow>
+                    <mn>2</mn>
+                </mfrac>
+            </math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                <mfrac>
+                    <mrow>
+                        <mtext>y</mtext>
+                        <msub>
+                            <mrow></mrow>
+                            <mn>1</mn>
+                        </msub>
+                        <mo>+</mo>
+                        <mtext>y</mtext>
+                        <msub>
+                            <mrow></mrow>
+                            <mn>2</mn>
+                        </msub>
+                    </mrow>
+                    <mn>2</mn>
+                </mfrac>
+            </math>)
+        </li>
+    </ol>
+
+    <h1>5_点的平移</h1>
+    <p>将点 A(x, y)</p>
+    <ul>
+        <li>向上平移 m 个单位, 得 A<sub>1</sub>(x, y + m) : 横坐标不变, 纵坐标变大</li>
+        <li>向下平移 m 个单位, 得 A<sub>2</sub>(x, y - m) : 横坐标不变, 纵坐标变小</li>
+        <li>向左平移 m 个单位, 得 A<sub>3</sub>(x - m, y) : 横坐标变小, 纵坐标不变</li>
+        <li>向上平移 m 个单位, 得 A<sub>4</sub>(x + m, y) : 横坐标变大, 纵坐标不变</li>
+    </ul>
+
+    <h1>6_点的翻折之坐标轴对称</h1>
+    <p>点 B(x, y)</p>
+    <ol>
+        <li>关于x轴对称, 得 B<sub>1</sub>(x, -y) : 横坐标不变, 纵坐标变成相反数</li>
+        <li>关于y轴对称, 得 B<sub>2</sub>(-x, y) : 纵坐标不变, 横坐标变成相反数</li>
+        <li>关于原点对称, 得 B<sub>3</sub>(-x, -y) : 横, 纵坐标均变成相反数</li>
+    </ol>
+
+    <h1>7_点的翻折之普通线对称</h1>
+    <p>点 C(x, y)</p>
+    <ul>
+        <li>关于 y = b 对称, 得 C<sub>1</sub>(x, 2b - y) : 横坐标不变, 纵坐标对称</li>
+        <li>关于 x = a 对称, 得 C<sub>2</sub>(2a - x, y) : 纵坐标不变, 横坐标对称</li>
+        <li>关于点 M(a, b) 对称, 得 C<sub>2</sub>(2a - x, 2b - y) : 横, 纵坐均标对称</li>
+    </ul>
+
+    <p>点 D(x, y)</p>
+    <ul>
+        <li>关于 y = x 对称, 得 D<sub>1</sub>(y, x) : 横, 纵坐均互换</li>
+        <li>关于 y = -x 对称, 得 D<sub>2</sub>(-y, -x) : 横, 纵坐均互换并变为相反数</li>
+    </ul>
+
+    <h1>8_点的旋转</h1>
+    <table>
+        <tr>
+            <th>题型</th>
+            <th>方法</th>
+        </tr>
+        <tr>
+            <td>旋转90°</td>
+            <td>画图, 数格子</td>
+        </tr>
+        <tr>
+            <td>旋转180°</td>
+            <td>转化为关于点的翻折问题</td>
+        </tr>
+    </table>
+
+    <p>例: 将点 A(1, 3) 绕点 B(4, 2) 顺时针旋转90°得A<sub>1</sub>, 顺时针旋转180°得A<sub>2</sub></p>
+
+    <p>旋转问题常见应用<br>题述: 图形翻滚若干周<br>类型: 周期问题<br>关键: 找准旋转中心及周期</p>
+
+    <h1>9_三角形面积问题</h1>
+    <ol>
+        <li>有一边与坐标轴平行或重合 : 该边作为底</li>
+        <p>S<sub>△ABC</sub> = <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mfrac>
+                <mn>1</mn>
+                <mn>2</mn>
+            </mfrac>
+        </math>|x<sub>B</sub> - x<sub>C</sub>||y<sub>A</sub> - y<sub>B</sub>|</p>
+        <p>S<sub>△ABC</sub> = <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <mfrac>
+                <mn>1</mn>
+                <mn>2</mn>
+            </mfrac>
+        </math>|y<sub>A</sub> - y<sub>B</sub>||x<sub>A</sub> - x<sub>C</sub>|</p>
+
+        <li>与坐标轴无平行边 : 沿顶点补全</li>
+        <p>S = S<sub>总</sub> - S<sub>1</sub> - S<sub>2</sub> - S<sub>3</sub></p>
+    </ol>
+
+    <h1>10_等腰三角形存在性问题</h1>
+    <p>常见题型: 已知 点A, B, △ABC 为等腰三角形, 求坐标轴上 点C 的可能性<br>解题思路: 分3类讨论</p>
+    <ol>
+        <li>AB = AC (AB 为腰): <br>以 A 为圆心, AB 为半径作圆, 交 x轴 于 C<sub>1</sub>, C<sub>2</sub>, 交 y轴 于 C<sub>3</sub>, C<sub>4</sub></li>
+        <li>AB = BC (AB 为腰): <br>以 B 为圆心, AB 为半径作圆, 交 x轴 于 C<sub>5</sub>, C<sub>6</sub>, 交 y轴 于 C<sub>7</sub>, C<sub>8</sub></li>
+        <li>AC = BC (AB 为底): <br>作 线段AB 的中垂线, 交 x轴 于 C<sub>9</sub>, 交 y轴 于 C<sub>10</sub></li>
+    </ol>
+</body>
+
+</html>
